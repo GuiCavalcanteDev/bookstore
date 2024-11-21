@@ -25,9 +25,6 @@ Desenvolver um sistema CRUD para uma livraria, permitindo que os usuários cadas
 - **Visualização de usuários**: Listagem de todos os usuários cadastrados, com detalhes de cada um.
 - **Autenticação de usuários**: Sistema de login com verificação de credenciais para acesso ao sistema.
 
-
-### **2. Requisitos Funcionais**
-
 ### **2. Requisitos Funcionais**
 
 | ID   | Requisito Funcional                                      | Prioridade | Status       |
