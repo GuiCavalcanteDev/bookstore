@@ -6,7 +6,7 @@
 **Nome do Projeto:** BOOKSTORE  
 **Data de Início:** 13/08/2024  
 **Data de Término Estimada:** 
-**Responsável:** Guilherme Cavalcante - RA:55824 e César Oliveira - RA:60049 
+**Responsável:** Guilherme Cavalcante - RA:55824 e César Oliveira - RA:60049  
 **Versão:** 1.2
 **Última Atualização:** 20/11/2024
 
