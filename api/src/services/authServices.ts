@@ -1,7 +1,7 @@
 import { UserRepository } from '../repositories/userRepository';
 import { hashPassword, comparePassword } from '../helpers/hashHelper';
 import { createSession } from '../helpers/sessionHelper';
-import bcrypt from 'bcrypt';
+import { generateToken } from '../helpers/jwtHelper';
 
 export class AuthService {
   private userRepository: UserRepository;
@@ -12,6 +12,7 @@ export class AuthService {
 
   async registerUser(name: string, email: string, password: string) {
     const passwordHash = await hashPassword(password);
+
     const user = await this.userRepository.addUser(name, email, passwordHash);
     return {
       username: user.name,
@@ -28,10 +29,13 @@ export class AuthService {
     const isPasswordValid = await comparePassword(password, user.passwordhash);
     if (!isPasswordValid) throw new Error('Senha incorreta');
 
+    const token = generateToken(user.id);
+
     createSession(user.id);
     return {
       username: user.name,
       email: user.email,
+      token: token,
       status: "Ok"
     };
   }
