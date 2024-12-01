@@ -5,7 +5,7 @@ export const authenticateJWT = (req: Request, res: Response, next: NextFunction)
   const token = req.headers.authorization?.split(' ')[1]; // "Bearer <token>"
 
   if (!token) {
-    return res.status(401).json({ error: 'Token de autenticação não fornecido' });
+    return res.status(401).json({ error: 'Token de autenticação não fornecido', status: 401});
   }
 
   try {
@@ -13,6 +13,6 @@ export const authenticateJWT = (req: Request, res: Response, next: NextFunction)
     req.body.userId = decoded.userId; // Adiciona userId ao request
     next();
   } catch (err) {
-    return res.status(403).json({ error: 'Token inválido ou expirado' });
+    return res.status(403).json({ error: 'Token inválido ou expirado', status: 401 });
   }
 };

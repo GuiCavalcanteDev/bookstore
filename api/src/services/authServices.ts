@@ -14,10 +14,13 @@ export class AuthService {
     const passwordHash = await hashPassword(password);
 
     const user = await this.userRepository.addUser(name, email, passwordHash);
+
+    const token = generateToken(user.id);
     return {
       username: user.name,
       email: user.email,
-      status: "Created"
+      token: token,
+      status: 201
     };
   }
 
@@ -36,7 +39,7 @@ export class AuthService {
       username: user.name,
       email: user.email,
       token: token,
-      status: "Ok"
+      status: 200
     };
   }
 
@@ -46,6 +49,7 @@ export class AuthService {
       id: user.id,
       name: user.name,
       email: user.email,
+      status: 200
     }));
   }
 
@@ -57,6 +61,7 @@ export class AuthService {
       id: user.id,
       name: user.name,
       email: user.email,
+      status: 200
     };
   }
 
