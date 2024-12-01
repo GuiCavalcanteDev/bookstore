@@ -79,8 +79,6 @@ npx ts-node src/server.ts
 ```
 O servidor estará em execução e pode ser acessado em http://localhost:3000.
 
-Aqui está o conteúdo formatado em Markdown:
-
 ```markdown
 # **Exemplos de Uso das Rotas**
 
@@ -91,26 +89,26 @@ Aqui estão os exemplos de uso das rotas definidas no projeto:
 ### **Listar todos os livros**
 
 - **Método:** `GET`
-- **Rota:** `/books`
+- **Rota:** `/api/books`
 - **Descrição:** Retorna todos os livros cadastrados.
 
 **Exemplo de requisição:**
 
 ```bash
-GET http://localhost:3000/books
+GET http://localhost:3000/api/books
 ```
 
 ### **Cadastrar um livro**
 
 - **Método:** `POST`
-- **Rota:** `/books`
+- **Rota:** `/api/books`
 - **Autenticação:** Requer um token JWT
 - **Descrição:** Adiciona um novo livro à livraria.
 
 **Exemplo de requisição:**
 
 ```bash
-POST http://localhost:3000/books
+POST http://localhost:3000/api/books
 Content-Type: application/json
 Authorization: Bearer [seu_token_jwt]
 ```
@@ -129,26 +127,26 @@ Authorization: Bearer [seu_token_jwt]
 ### **Visualizar um livro por ID**
 
 - **Método:** `GET`
-- **Rota:** `/books/:id`
+- **Rota:** `/api/books/:id`
 - **Descrição:** Retorna os detalhes de um livro específico com base no ID.
 
 **Exemplo de requisição:**
 
 ```bash
-GET http://localhost:3000/books/1
+GET http://localhost:3000/api/books/1
 ```
 
 ### **Atualizar um livro**
 
 - **Método:** `PUT`
-- **Rota:** `/books/:id`
+- **Rota:** `/api/books/:id`
 - **Autenticação:** Requer um token JWT
 - **Descrição:** Atualiza as informações de um livro existente.
 
 **Exemplo de requisição:**
 
 ```bash
-PUT http://localhost:3000/books/1
+PUT http://localhost:3000/api/books/1
 Content-Type: application/json
 Authorization: Bearer [seu_token_jwt]
 ```
@@ -167,14 +165,14 @@ Authorization: Bearer [seu_token_jwt]
 ### **Excluir um livro**
 
 - **Método:** `DELETE`
-- **Rota:** `/books/:id`
+- **Rota:** `/api/books/:id`
 - **Autenticação:** Requer um token JWT
 - **Descrição:** Exclui um livro específico.
 
 **Exemplo de requisição:**
 
 ```bash
-DELETE http://localhost:3000/books/1
+DELETE http://localhost:3000/api/books/1
 Authorization: Bearer [seu_token_jwt]
 ```
 
@@ -185,13 +183,13 @@ Authorization: Bearer [seu_token_jwt]
 ### **Registrar um novo usuário**
 
 - **Método:** `POST`
-- **Rota:** `/register`
+- **Rota:** `/api/register`
 - **Descrição:** Cadastra um novo usuário no sistema.
 
 **Exemplo de requisição:**
 
 ```bash
-POST http://localhost:3000/register
+POST http://localhost:3000/api/register
 Content-Type: application/json
 ```
 
@@ -208,13 +206,13 @@ Content-Type: application/json
 ### **Login de usuário**
 
 - **Método:** `POST`
-- **Rota:** `/login`
+- **Rota:** `/api/login`
 - **Descrição:** Realiza o login do usuário e retorna um token JWT.
 
 **Exemplo de requisição:**
 
 ```bash
-POST http://localhost:3000/login
+POST http://localhost:3000/api/login
 Content-Type: application/json
 ```
 
@@ -230,42 +228,42 @@ Content-Type: application/json
 ### **Listar todos os usuários**
 
 - **Método:** `GET`
-- **Rota:** `/users`
+- **Rota:** `/api/users`
 - **Autenticação:** Requer um token JWT
 - **Descrição:** Retorna uma lista de todos os usuários cadastrados.
 
 **Exemplo de requisição:**
 
 ```bash
-GET http://localhost:3000/users
+GET http://localhost:3000/api/users
 Authorization: Bearer [seu_token_jwt]
 ```
 
 ### **Visualizar um usuário por ID**
 
 - **Método:** `GET`
-- **Rota:** `/users/:id`
+- **Rota:** `/api/users/:id`
 - **Autenticação:** Requer um token JWT
 - **Descrição:** Retorna os detalhes de um usuário específico com base no ID.
 
 **Exemplo de requisição:**
 
 ```bash
-GET http://localhost:3000/users/1
+GET http://localhost:3000/api/users/1
 Authorization: Bearer [seu_token_jwt]
 ```
 
 ### **Atualizar um usuário**
 
 - **Método:** `PUT`
-- **Rota:** `/users/:id`
+- **Rota:** `/api/users/:id`
 - **Autenticação:** Requer um token JWT
 - **Descrição:** Atualiza as informações de um usuário existente.
 
 **Exemplo de requisição:**
 
 ```bash
-PUT http://localhost:3000/users/1
+PUT http://localhost:3000/api/users/1
 Content-Type: application/json
 Authorization: Bearer [seu_token_jwt]
 ```
@@ -283,13 +281,13 @@ Authorization: Bearer [seu_token_jwt]
 ### **Excluir um usuário**
 
 - **Método:** `DELETE`
-- **Rota:** `/users/:id`
+- **Rota:** `/api/users/:id`
 - **Autenticação:** Requer um token JWT
 - **Descrição:** Exclui um usuário do sistema.
 
 **Exemplo de requisição:**
 
 ```bash
-DELETE http://localhost:3000/users/1
+DELETE http://localhost:3000/api/users/1
 Authorization: Bearer [seu_token_jwt]
 ```
