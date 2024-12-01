@@ -1,117 +1,295 @@
-
 # **Requisitos do Projeto**
 
 ## **1. Visão Geral**
 
 **Nome do Projeto:** BOOKSTORE  
 **Data de Início:** 13/08/2024  
-**Data de Término Estimada:** 
-**Responsável:** Guilherme Cavalcante - RA:55824 e César Oliveira - RA:60049  
-**Versão:** 1.2
-**Última Atualização:** 20/11/2024
+**Data de Término Estimada:** [Inserir Data]  
+**Responsáveis:**  
+- Guilherme Cavalcante - RA: 55824  
+- César Oliveira - RA: 60049  
+**Versão:** 1.2  
+**Última Atualização:** 01/12/2024
 
 ### **1.1. Objetivo**
-Desenvolver um sistema CRUD para uma livraria, permitindo que os usuários cadastrem, editem, excluam e visualizem livros e usuários.
+Desenvolver um sistema CRUD para uma livraria, permitindo que os usuários possam cadastrar, editar, excluir e visualizar livros e usuários.
 
 ### **1.2. Escopo**
 
-- **Cadastro de livros**: Funcionalidade para cadastrar novos livros com informações como título, autor, preço e descrição.
-- **Edição de livros**: Permitir a edição das informações dos livros cadastrados, como título, autor e preço.
-- **Exclusão de livros**: Funcionalidade para excluir livros cadastrados no sistema.
-- **Visualização de livros**: Listagem de todos os livros cadastrados com a opção de visualizar detalhes de cada um.
-- **Cadastro de usuários**: Funcionalidade para cadastrar novos usuários com informações como nome, e-mail e senha.
-- **Edição de usuários**: Permitir a edição das informações dos usuários cadastrados, como nome, e-mail e senha.
-- **Exclusão de usuários**: Funcionalidade para excluir usuários do sistema.
-- **Visualização de usuários**: Listagem de todos os usuários cadastrados, com detalhes de cada um.
-- **Autenticação de usuários**: Sistema de login com verificação de credenciais para acesso ao sistema.
+O sistema terá as seguintes funcionalidades:
 
-### **2. Requisitos Funcionais**
-
-| ID   | Requisito Funcional                                      | Prioridade | Status       |
-|------|----------------------------------------------------------|------------|--------------|
-| RF01 | O sistema deve permitir o cadastro de livros com título, autor, preço e descrição. | Alta       | <span style="color:green;">Concluído</span> |
-| RF02 | O sistema deve permitir a edição de livros, com a possibilidade de atualizar título, autor, preço e descrição. | Alta       | <span style="color:green;">Concluído</span> |
-| RF03 | O sistema deve permitir a exclusão de livros cadastrados. | Alta       | <span style="color:green;">Concluído</span> |
-| RF04 | O sistema deve permitir a visualização da lista de todos os livros cadastrados. | Média      | <span style="color:green;">Concluído</span> |
-| RF05 | O sistema deve permitir a visualização dos detalhes de um livro específico. | Média      | <span style="color:green;">Concluído</span> |
-| RF06 | O sistema deve permitir o cadastro de usuários com nome, e-mail e senha. | Alta       | <span style="color:green;">Concluído</span> |
-| RF07 | O sistema deve permitir a edição de dados do usuário, como nome, e-mail e senha. | Alta       | <span style="color:green;">Concluído</span> |
-| RF08 | O sistema deve permitir a exclusão de usuários cadastrados. | Alta       | <span style="color:green;">Concluído</span> |
-| RF09 | O sistema deve permitir a visualização de todos os usuários cadastrados. | Média      | <span style="color:green;">Concluído</span> |
-| RF10 | O sistema deve permitir que usuários realizem login com validação de credenciais (e-mail e senha). | Alta       | <span style="color:green;">Concluído</span> |
-
-### **2.1. Descrição dos Requisitos Funcionais**
-Descreva cada requisito funcional em detalhes.
-
-**RF01: Cadastro de Livros**  
-**Descrição:** O sistema deve permitir o cadastro de livros, incluindo os campos título, autor, preço e descrição. O usuário deve preencher os campos obrigatórios e, ao clicar no botão "Cadastrar", o livro será salvo no banco de dados. Após o cadastro, o sistema deve exibir uma mensagem de sucesso e redirecionar o usuário para a lista de livros cadastrados.
-
-**RF02: Edição de Livros**  
-**Descrição:** O sistema deve permitir a edição de livros previamente cadastrados. O usuário poderá atualizar os campos título, autor, preço e descrição. A edição será realizada por meio de uma interface de edição acessível a partir da visualização do livro. Após a atualização, o sistema deve salvar as alterações e exibir uma mensagem de sucesso.
-
-**RF03: Exclusão de Livros**  
-**Descrição:** O sistema deve permitir a exclusão de livros. O usuário poderá excluir um livro através da interface de visualização do livro, clicando no botão "Excluir". Após a confirmação da exclusão, o livro será removido do banco de dados e o sistema deve exibir uma mensagem de sucesso.
-
-**RF04: Visualização da Lista de Livros**  
-**Descrição:** O sistema deve permitir a visualização de todos os livros cadastrados. A lista deve ser exibida em uma página específica, com os detalhes básicos de cada livro (título, autor, preço). O usuário deve ser capaz de visualizar essa lista de forma ordenada e com a possibilidade de buscar livros por título ou autor.
-
-**RF05: Visualização de Detalhes de um Livro**  
-**Descrição:** O sistema deve permitir a visualização de detalhes completos de um livro. Quando o usuário clicar em um livro na lista de livros, ele será redirecionado para uma página de detalhes do livro, onde poderá visualizar todas as informações, como título, autor, preço e descrição.
-
-**RF06: Cadastro de Usuários**  
-**Descrição:** O sistema deve permitir o cadastro de usuários, incluindo os campos nome, e-mail e senha. O usuário preencherá esses dados e, ao clicar no botão "Cadastrar", o sistema irá salvar as informações e criar uma conta para o usuário. Após o cadastro, o sistema exibirá uma mensagem de sucesso e redirecionará para a tela de login.
-
-**RF07: Edição de Dados do Usuário**  
-**Descrição:** O sistema deve permitir a edição dos dados do usuário, incluindo nome, e-mail e senha. O usuário poderá atualizar seus dados através de uma interface de edição. Após a atualização, o sistema salvará as alterações e exibirá uma mensagem de sucesso.
-
-**RF08: Exclusão de Usuários**  
-**Descrição:** O sistema deve permitir a exclusão de usuários. O usuário poderá excluir sua conta através da interface de configurações da conta, clicando no botão "Excluir Conta". Após a confirmação da exclusão, a conta será removida do sistema e o usuário será redirecionado para a página de login.
-
-**RF09: Visualização de Usuários Cadastrados**  
-**Descrição:** O sistema deve permitir a visualização de todos os usuários cadastrados. A lista de usuários será exibida em uma página específica, com os detalhes básicos de cada usuário, como nome e e-mail. O administrador do sistema poderá visualizar essa lista para gerenciar os usuários.
-
-**RF10: Login de Usuários**  
-**Descrição:** O sistema deve permitir que os usuários realizem login com seu e-mail e senha. O sistema deve validar as credenciais e, se forem corretas, permitir o acesso do usuário à plataforma. Caso as credenciais estejam erradas, o sistema deve exibir uma mensagem de erro informando que o login falhou.
-
-
-## **3. Requisitos Não Funcionais**
-
-| ID   | Requisito Não Funcional                                  | Prioridade | Status       |
-|------|----------------------------------------------------------|------------|--------------|
-| RNF01| O sistema deve ser capaz de suportar até 1000 requisições simultâneas | Alta       | Concluído    |
-| RNF02| O sistema deve garantir que os dados dos livros sejam armazenados com segurança utilizando criptografia para informações sensíveis | Alta       | Concluído    |
-| RNF03| O sistema deve ser responsivo, ou seja, deve se adaptar a diferentes tamanhos de tela, incluindo desktop, tablet e dispositivos móveis | Média      | Concluído    |
-| RNF04| O tempo de resposta de todas as requisições deve ser inferior a 2 segundos | Alta       | Concluído    |
-| RNF05| O sistema deve ser compatível com as versões mais recentes dos principais navegadores (Chrome, Firefox, Safari, Edge) | Média      | Concluído    |
-| RNF06| O sistema deve realizar backups diários dos dados no banco de dados | Alta       | Concluído    |
-
-### **3.1. Descrição dos Requisitos Não Funcionais**
-Descreva cada requisito não funcional em detalhes.
-
-**RNF01: Capacidade de Requisições Simultâneas**  
-**Descrição:** O sistema deve ser projetado para suportar até 1000 requisições simultâneas sem degradação de desempenho, garantindo a escalabilidade para crescimento futuro. Isso implica no uso de boas práticas de otimização, como o uso de cache, balanceamento de carga e monitoramento constante do desempenho.
-
-**RNF02: Segurança de Dados**  
-**Descrição:** O sistema deve garantir a proteção dos dados armazenados, utilizando criptografia AES-256 para armazenar informações sensíveis, como senhas de usuários. A criptografia deve ser aplicada tanto para os dados em trânsito quanto para os dados em repouso, a fim de garantir a segurança e confidencialidade das informações.
-
-**RNF03: Responsividade**  
-**Descrição:** O sistema deve ser projetado para funcionar corretamente em dispositivos com diferentes tamanhos de tela. A interface deve ser fluida e adaptável, utilizando design responsivo com media queries CSS, garantindo uma boa experiência de usuário em qualquer dispositivo.
-
-**RNF04: Tempo de Resposta**  
-**Descrição:** Todas as requisições ao sistema devem ser processadas e respondidas em menos de 2 segundos, incluindo a interação com o banco de dados e a geração de páginas dinâmicas. Isso deve ser monitorado e otimizado continuamente, buscando melhorar a performance através de técnicas como otimização de consultas SQL e uso de cache.
-
-**RNF05: Compatibilidade com Navegadores**  
-**Descrição:** O sistema deve ser testado e funcionar corretamente nas versões mais recentes dos principais navegadores, como Google Chrome, Mozilla Firefox, Apple Safari e Microsoft Edge. A compatibilidade deve ser garantida, considerando as diferenças de implementação entre os navegadores.
-
-**RNF06: Backup de Dados**  
-**Descrição:** O sistema deve realizar backups automáticos dos dados do banco de dados pelo menos uma vez por dia, garantindo que, em caso de falha ou perda de dados, seja possível restaurar as informações até o último ponto de backup. Esses backups devem ser armazenados em uma localização segura e devem ser monitorados para garantir sua integridade.
+- **Cadastro de livros:** Permite cadastrar novos livros com informações como título, autor, preço e descrição.
+- **Edição de livros:** Permite editar as informações dos livros cadastrados, como título, autor e preço.
+- **Exclusão de livros:** Funcionalidade para excluir livros do sistema.
+- **Visualização de livros:** Exibe uma lista de todos os livros cadastrados com a opção de visualizar detalhes de cada um.
+- **Cadastro de usuários:** Permite cadastrar novos usuários com informações como nome, e-mail e senha.
+- **Edição de usuários:** Permite editar as informações dos usuários cadastrados, como nome, e-mail e senha.
+- **Exclusão de usuários:** Funcionalidade para excluir usuários do sistema.
+- **Visualização de usuários:** Exibe uma lista de todos os usuários cadastrados com detalhes de cada um.
+- **Autenticação de usuários:** Sistema de login com verificação de credenciais para acesso ao sistema.
 
 ---
 
+## **2. Estrutura do Projeto**
 
-### Como Iniciar a API
+A estrutura do projeto é organizada da seguinte forma:
 
-Para iniciar a API, utilize o seguinte comando no terminal:
+```plaintext
+📂 bookstore/
+├── 📁 src/                
+│   ├── 📁 config/         # Arquivos de configuração.
+│   ├── 📁 controllers/    # Controladores que gerenciam as operações das rotas.
+│   ├── 📁 helpers/        # Arquivos de ajuda para funções e métodos reutilizáveis.
+│   ├── 📁 models/         # Definição dos modelos de dados da aplicação.
+│   ├── 📁 migrations/     # Arquivos de criação de tabelas no banco de dados.
+│   ├── 📁 routes/         # Arquivos de definição das rotas.
+│   ├── 📁 repository/     # Arquivos de acesso aos dados.
+│   ├── 📁 services/       # Lógica de negócios e regras da aplicação.
+│   ├── 📄 app.js          # Configuração e inicialização da aplicação.
+│   └── 📄 server.js       # Arquivo principal que inicia o servidor.
+├── 📄 package.json        # Gerenciamento de dependências e scripts do projeto.
+├── 📄 README.md           # Documentação do projeto.
+```
+
+# **Instruções de Execução e Exemplos de Rotas**
+
+## **1. Clonar o Repositório**
+
+Primeiro, clone o repositório para a sua máquina local:
+
+```bash
+git clone https://github.com/guilhermecavalcante/bookstore.git
+```
+
+## **2. Instalar Dependências**
+
+Acesse o diretório do projeto e instale as dependências necessárias:
+
+```bash
+cd bookstore
+npm install
+```
+
+## **3. Iniciar o Servidor**
+
+Para rodar o servidor, use o comando abaixo:
 
 ```bash
 npx ts-node src/server.ts
+```
+O servidor estará em execução e pode ser acessado em http://localhost:3000.
+
+Aqui está o conteúdo formatado em Markdown:
+
+```markdown
+# **Exemplos de Uso das Rotas**
+
+Aqui estão os exemplos de uso das rotas definidas no projeto:
+
+## **Livros**
+
+### **Listar todos os livros**
+
+- **Método:** `GET`
+- **Rota:** `/books`
+- **Descrição:** Retorna todos os livros cadastrados.
+
+**Exemplo de requisição:**
+
+```bash
+GET http://localhost:3000/books
+```
+
+### **Cadastrar um livro**
+
+- **Método:** `POST`
+- **Rota:** `/books`
+- **Autenticação:** Requer um token JWT
+- **Descrição:** Adiciona um novo livro à livraria.
+
+**Exemplo de requisição:**
+
+```bash
+POST http://localhost:3000/books
+Content-Type: application/json
+Authorization: Bearer [seu_token_jwt]
+```
+
+**Corpo da requisição:**
+
+```json
+{
+  "title": "O Senhor dos Anéis",
+  "author": "J.R.R. Tolkien",
+  "price": 59.90,
+  "description": "Uma obra épica de fantasia."
+}
+```
+
+### **Visualizar um livro por ID**
+
+- **Método:** `GET`
+- **Rota:** `/books/:id`
+- **Descrição:** Retorna os detalhes de um livro específico com base no ID.
+
+**Exemplo de requisição:**
+
+```bash
+GET http://localhost:3000/books/1
+```
+
+### **Atualizar um livro**
+
+- **Método:** `PUT`
+- **Rota:** `/books/:id`
+- **Autenticação:** Requer um token JWT
+- **Descrição:** Atualiza as informações de um livro existente.
+
+**Exemplo de requisição:**
+
+```bash
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+Authorization: Bearer [seu_token_jwt]
+```
+
+**Corpo da requisição:**
+
+```json
+{
+  "title": "O Hobbit",
+  "author": "J.R.R. Tolkien",
+  "price": 49.90,
+  "description": "Uma nova edição do clássico."
+}
+```
+
+### **Excluir um livro**
+
+- **Método:** `DELETE`
+- **Rota:** `/books/:id`
+- **Autenticação:** Requer um token JWT
+- **Descrição:** Exclui um livro específico.
+
+**Exemplo de requisição:**
+
+```bash
+DELETE http://localhost:3000/books/1
+Authorization: Bearer [seu_token_jwt]
+```
+
+---
+
+## **Usuários**
+
+### **Registrar um novo usuário**
+
+- **Método:** `POST`
+- **Rota:** `/register`
+- **Descrição:** Cadastra um novo usuário no sistema.
+
+**Exemplo de requisição:**
+
+```bash
+POST http://localhost:3000/register
+Content-Type: application/json
+```
+
+**Corpo da requisição:**
+
+```json
+{
+  "name": "João Silva",
+  "email": "joao@email.com",
+  "password": "senha123"
+}
+```
+
+### **Login de usuário**
+
+- **Método:** `POST`
+- **Rota:** `/login`
+- **Descrição:** Realiza o login do usuário e retorna um token JWT.
+
+**Exemplo de requisição:**
+
+```bash
+POST http://localhost:3000/login
+Content-Type: application/json
+```
+
+**Corpo da requisição:**
+
+```json
+{
+  "email": "joao@email.com",
+  "password": "senha123"
+}
+```
+
+### **Listar todos os usuários**
+
+- **Método:** `GET`
+- **Rota:** `/users`
+- **Autenticação:** Requer um token JWT
+- **Descrição:** Retorna uma lista de todos os usuários cadastrados.
+
+**Exemplo de requisição:**
+
+```bash
+GET http://localhost:3000/users
+Authorization: Bearer [seu_token_jwt]
+```
+
+### **Visualizar um usuário por ID**
+
+- **Método:** `GET`
+- **Rota:** `/users/:id`
+- **Autenticação:** Requer um token JWT
+- **Descrição:** Retorna os detalhes de um usuário específico com base no ID.
+
+**Exemplo de requisição:**
+
+```bash
+GET http://localhost:3000/users/1
+Authorization: Bearer [seu_token_jwt]
+```
+
+### **Atualizar um usuário**
+
+- **Método:** `PUT`
+- **Rota:** `/users/:id`
+- **Autenticação:** Requer um token JWT
+- **Descrição:** Atualiza as informações de um usuário existente.
+
+**Exemplo de requisição:**
+
+```bash
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+Authorization: Bearer [seu_token_jwt]
+```
+
+**Corpo da requisição:**
+
+```json
+{
+  "name": "João Silva",
+  "email": "joao.novo@email.com",
+  "password": "senha456"
+}
+```
+
+### **Excluir um usuário**
+
+- **Método:** `DELETE`
+- **Rota:** `/users/:id`
+- **Autenticação:** Requer um token JWT
+- **Descrição:** Exclui um usuário do sistema.
+
+**Exemplo de requisição:**
+
+```bash
+DELETE http://localhost:3000/users/1
+Authorization: Bearer [seu_token_jwt]
+```
