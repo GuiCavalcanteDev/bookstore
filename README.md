@@ -69,6 +69,9 @@ Acesse o diretório do projeto e instale as dependências necessárias:
 cd bookstore
 cd api
 npm install
+
+//Iniciar servidor
+npm run start
 ```
 
 ```bash
