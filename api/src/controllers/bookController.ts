@@ -44,12 +44,12 @@ export const addBook = async (req: Request, res: Response) => {
 
   try {
     const newBook = await bookRepository.addBook(title, author, price);
-    res.status(201).json(newBook);
+    res.status(201).json({newBook, status: 201});
   } catch (error: unknown) {
     if (error instanceof Error) {
-      res.status(500).json({ message: 'Erro ao adicionar o livro.', error: error.message });
+      res.status(500).json({ message: 'Erro ao adicionar o livro.', error: error.message, status: 400 });
     } else {
-      res.status(500).json({ message: 'Erro desconhecido ao adicionar o livro.' });
+      res.status(500).json({ message: 'Erro desconhecido ao adicionar o livro.', status: 400 });
     }
   }
 };
@@ -68,7 +68,7 @@ export const updateBook = async (req: Request, res: Response) => {
       return res.status(404).json({ message: 'Livro não encontrado.' });
     }
 
-    res.status(200).json(updatedBook);
+    res.status(200).json({updatedBook, status: 200});
   } catch (error: unknown) {
     if (error instanceof Error) {
       res.status(500).json({ message: 'Erro ao atualizar o livro.', error: error.message });
@@ -89,7 +89,7 @@ export const deleteBook = async (req: Request, res: Response) => {
       return res.status(404).json({ message: 'Livro não encontrado.' });
     }
 
-    res.status(200).json({ message: 'Livro deletado com sucesso.' });
+    res.status(200).json({ message: 'Livro deletado com sucesso.', status: 200 });
   } catch (error: unknown) {
     if (error instanceof Error) {
       res.status(500).json({ message: 'Erro ao deletar o livro.', error: error.message });

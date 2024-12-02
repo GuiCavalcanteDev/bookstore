@@ -1,0 +1,32 @@
+
+:root {
+    --primary: black;
+    --secondary:#242323;
+    --tertiary: #FF6500;
+
+    --font-color: white;
+
+    --font: Arial, Helvetica, sans-serif ;
+}
+
+*, a{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    list-style: none;
+    text-decoration: none;
+
+    font-size: 98.2%;
+}
+
+body {
+    background: var(--primary) !important;
+    color: var(--font-color) !important;
+    height: 100%;
+    border: none;
+}
+
+a, ul, li {
+    color: var(--font-color);
+}

@@ -3,10 +3,10 @@ import { getAllBooks, addBook, getBookById, updateBook, deleteBook } from '../co
 import { authenticateJWT } from '../services/JwtService';
 const router = Router();
 
-router.get('/books', getAllBooks);
+router.get('/books', authenticateJWT, getAllBooks);
 router.post('/books',authenticateJWT, addBook);
-router.get('/books/:id', getBookById);
-router.put('/books/:id',authenticateJWT, updateBook);
+router.get('/books/:id', authenticateJWT, getBookById);
+router.put('/books/:id', authenticateJWT, updateBook);
 router.delete('/books/:id', authenticateJWT, deleteBook);
 
 export default router;

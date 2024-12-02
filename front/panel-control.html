@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes - Painel de Controle</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/panel.css">
+    <script src="./js/panel.js" type="module" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="edit-film">
+        <div class="container-edit">
+            <div class="exit">
+                <i class="fa-solid fa-xmark" id="exit-edit"></i>
+            </div>
+
+            <h1>Titulo</h1>
+            <input id="title-edit" type="text" placeholder="Titulo...">
+            <h1>Autor</h1>
+            <input id="author-edit" type="text" placeholder="author...">
+            <h1>Price</h1>
+            <input id="price-edit" type="text" placeholder="Preço...">
+            <div class="buttons">
+                <input id="confirmEdit" type="button" value="Confirmar" style="background: rgb(92, 179, 10);"> 
+            </div>
+        </div>
+    </section>
+
+    <section id="crud-Films">
+        <div class="form-films">
+            <div class="container-films">
+                <h2>Cadastrar Livro</h2>
+                <div class="input">
+                    <h1>Titulo</h1>
+                    <input id="title-form" type="text" placeholder="Digite um titulo..."/>
+                </div>
+                <div class="input">
+                    <h1>Autor</h1>
+                    <input id="author-form" type="text" placeholder="Digite o nome do autor.."/>
+                </div>
+                <div class="input">   
+                    <h1>Price</h1>
+                    <input id="price-form" type="number" placeholder="Digite um preço..."/>
+                </div>
+                
+                <div class="buttons-form">
+                    <input id="clearForm" type="button" value="Limpar"  style="background: rgb(11, 162, 233);">
+                    <input id="confirmForm" type="button" value="Confirmar" style="background: rgb(92, 179, 10);">
+                </div>
+            </div>
+        </div>
+    
+        <div id="listFilms" class="list-films">
+            
+            <h1> Listagem De Livros </h1>
+            <div class="line">
+                <div class="title">Titulo</div>
+                <div class="title">Autor</div>
+                <div class="title">Price</div>
+                <div class="title">Opções</div>
+            </div>
+            <div id="listDados">
+                    
+            </div>
+        </div>
+    </section>
+   
+</body>
+</html>
