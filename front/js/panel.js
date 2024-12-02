@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let response = await GetBooks();
 
     if(response.status == 401 || response == null || response == undefined){
+        sessionStorage.clear()
         window.location.replace('/login.html');
         return
     }
