@@ -4,12 +4,12 @@
 
 **Nome do Projeto:** BOOKSTORE  
 **Data de Início:** 13/08/2024  
-**Data de Término Estimada:** [Inserir Data]  
+**Data de Término Estimada:** 02/12/2024
 **Responsáveis:**  
 - Guilherme Cavalcante - RA: 55824  
 - César Oliveira - RA: 60049  
-**Versão:** 1.2  
-**Última Atualização:** 01/12/2024
+**Versão:** 1.4  
+**Última Atualização:** 02/12/2024
 
 ### **1.1. Objetivo**
 Desenvolver um sistema CRUD para uma livraria, permitindo que os usuários possam cadastrar, editar, excluir e visualizar livros e usuários.
@@ -290,4 +290,10 @@ Authorization: Bearer [seu_token_jwt]
 ```bash
 DELETE http://localhost:3000/api/users/1
 Authorization: Bearer [seu_token_jwt]
+```
+
+**USUARIO PARA TESTE FRONT-END**
+```bash
+Email: admin@admin.com
+Password: admin
 ```
