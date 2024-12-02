@@ -7,7 +7,8 @@
 **Data de Término Estimada:** 02/12/2024
 **Responsáveis:**  
 - Guilherme Cavalcante - RA: 55824  
-- César Oliveira - RA: 60049  
+- César Oliveira - RA: 60049
+- Davi Sousa - RA: 62549
 **Versão:** 1.4  
 **Última Atualização:** 02/12/2024
 
