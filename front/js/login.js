@@ -23,5 +23,5 @@ document.getElementById("submitAuth").addEventListener("click", async() => {
     }
 
     sessionStorage.setItem("Token", response.token);
-    window.location.href = 'http://www.localhost:5500/panel-control.html';
+    window.location.href = '/panel-control.html';
 })
