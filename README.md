@@ -86,6 +86,12 @@ Para rodar o servidor, use o comando abaixo:
 ```bash
 npx ts-node src/server.ts
 ```
+**USUARIO PARA TESTE FRONT-END**
+```bash
+Email: admin@admin.com
+Password: admin
+```
+
 O servidor estará em execução e pode ser acessado em http://localhost:3000.
 
 ```markdown
@@ -301,8 +307,4 @@ DELETE http://localhost:3000/api/users/1
 Authorization: Bearer [seu_token_jwt]
 ```
 
-**USUARIO PARA TESTE FRONT-END**
-```bash
-Email: admin@admin.com
-Password: admin
-```
+
