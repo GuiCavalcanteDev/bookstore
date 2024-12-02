@@ -67,7 +67,13 @@ Acesse o diretório do projeto e instale as dependências necessárias:
 
 ```bash
 cd bookstore
+cd api
 npm install
+```
+
+```bash
+cd front
+## Abrir com Live server.
 ```
 
 ## **3. Iniciar o Servidor**
